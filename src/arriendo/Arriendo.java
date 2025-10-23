@@ -23,6 +23,14 @@ public class Arriendo {
         this.precioDiario = precioDiario;
     }
 
+    public boolean ValidarDiasArriendo(){
+        if(this.diasArriendo > 1 && this.diasArriendo < 10){
+            return true;
+        } else {
+            EnviarMensajeDeSistema("La cantidad de días para el arriendo debe ser entre 2 y 30 días.");
+            return false;
+        }
+    }
     //Método publico para evaluar si el arriendo puede ser realizado
     public boolean EvaluarArriendo() {
         if (!this.cliente.ValorVigencia()) { //Verifica si el cliente está vigente

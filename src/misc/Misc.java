@@ -12,5 +12,11 @@ public class Misc {
         return passGerente;
     }
 
+    public void ImprimirSeparador(String titulo){
+        System.out.println("");
+        System.out.println("----------------"+titulo+"----------------");
+        System.out.println("");
+    }
+
     
 }
