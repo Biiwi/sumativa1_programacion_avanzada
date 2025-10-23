@@ -27,7 +27,7 @@ public class Arriendo {
         if(this.diasArriendo > 1 && this.diasArriendo < 10){
             return true;
         } else {
-            EnviarMensajeDeSistema("La cantidad de días para el arriendo debe ser entre 2 y 30 días.");
+            EnviarMensajeDeSistema("La cantidad de días para el arriendo debe ser entre 2 y 9 días.");
             return false;
         }
     }
